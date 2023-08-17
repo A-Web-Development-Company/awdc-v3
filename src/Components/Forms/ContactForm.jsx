@@ -4,13 +4,8 @@ import PrimaryButton from "../Buttons/PrimaryButton";
 const ContactForm = () => {
   return (
     <div className="contact-form-container">
-      <form
-        method="POST"
-        name="contact-mui"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact-mui" />
+      <form method="POST" name="contact" netlify netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
         <TextField
           label="Name"
           name="name"
