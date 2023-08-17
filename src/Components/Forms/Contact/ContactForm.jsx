@@ -1,5 +1,6 @@
 import { TextField } from "@mui/material";
-import PrimaryButton from "../Buttons/PrimaryButton";
+import PrimaryButton from "../../Buttons/PrimaryButton";
+import "./ContactForm.css";
 
 const ContactForm = () => {
   return (

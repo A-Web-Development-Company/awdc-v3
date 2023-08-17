@@ -3,7 +3,7 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import LandingPage from "./Layouts/LandingPage/LandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ContactForm from "./Components/Forms/ContactForm";
+import ContactForm from "./Components/Forms/Contact/ContactForm";
 
 function App() {
   return (
