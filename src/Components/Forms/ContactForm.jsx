@@ -6,11 +6,11 @@ const ContactForm = () => {
     <div className="contact-form-container">
       <form
         method="POST"
-        name="contact-mui"
+        name="contact"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        <input type="hidden" name="form-name" value="contact-mui" />
+        <input type="hidden" name="form-name" value="contact" />
         <TextField
           label="Name"
           name="name"
@@ -34,6 +34,7 @@ const ContactForm = () => {
         />
         <TextField
           label="Additional Comments/Notes"
+          name="message"
           fullWidth
           multiline
           rows={4}
