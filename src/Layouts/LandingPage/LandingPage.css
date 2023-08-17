@@ -1,0 +1,17 @@
+.landing-cta {
+  margin-left: 2em;
+}
+
+.tagline {
+  display: flex;
+  text-align: left;
+  font-size: 6rem;
+  line-height: 1.25;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.landing-button {
+  display: flex;
+  font-size: 1.5rem;
+}
