@@ -42,7 +42,7 @@ const ContactForm = () => {
             type="text"
             margin="normal"
           />
-          <PrimaryButton>Submit</PrimaryButton>
+          <PrimaryButton type="submit">Submit</PrimaryButton>
         </form>
       </FormControl>
     </div>
