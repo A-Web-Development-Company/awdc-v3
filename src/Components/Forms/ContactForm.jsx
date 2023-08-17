@@ -21,6 +21,7 @@ const ContactForm = () => {
         />
         <TextField
           label="Email Address"
+          name="email"
           required
           fullWidth
           type="email"
@@ -28,6 +29,7 @@ const ContactForm = () => {
         />
         <TextField
           label="Company/Organization Name"
+          name="company"
           fullWidth
           type="text"
           margin="normal"
