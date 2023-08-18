@@ -14,3 +14,13 @@ nav ul {
   margin-top: 1em;
   cursor: pointer;
 }
+
+.logo {
+  height: 7em;
+  width: 14em;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
