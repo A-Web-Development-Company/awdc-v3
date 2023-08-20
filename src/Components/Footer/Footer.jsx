@@ -6,7 +6,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <h2>Connect with us</h2>
+      <h2 className="footer-tag">Connect with us</h2>
       <div className="social">
         <a
           href="https://www.instagram.com/awdc.io/"

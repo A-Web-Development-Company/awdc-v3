@@ -1,26 +1,69 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-}
-
-.nav-item {
-  margin-top: 1em;
-  cursor: pointer;
+:root {
+  --main-color: #00bcc9;
+  --main-text-color: #39405f;
+  --secondary-text-color: #267ba1;
+  --dark-mode-background: #121212;
+  --dark-mode-text-color: #f8f0e3;
 }
 
 .logo {
-  height: 7em;
-  width: 14em;
+  height: 4em;
+  width: 9.5em;
+  margin-bottom: 2em;
 }
 
 .logo img {
   height: 100%;
   width: 100%;
+  margin: 1em;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  color: var(--dark-mode-text-color);
+  background-color: hsl(200, 100%, 8%);
+  box-shadow: inset 0px -3px 5px -5px rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left {
+  padding: 0 0 0.5em 0.5em;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 1em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-mode-text-color);
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.contact-cta-button {
+  margin: 1em 1em 1em 0em;
 }
