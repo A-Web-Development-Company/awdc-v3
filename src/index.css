@@ -35,7 +35,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: hsl(200, 100%, 8%);
 }
 
 h1 {
@@ -83,5 +82,9 @@ button:focus-visible {
   }
   .nav-link {
     color: var(--secondary-text-color);
+  }
+  .footer-container {
+    background-color: #fff;
+    box-shadow: inset 0px 3px 5px -5px rgba(21, 55, 44, 0.1);
   }
 }

@@ -23,7 +23,7 @@
   position: fixed;
   width: 100%;
   color: var(--dark-mode-text-color);
-  background-color: hsl(200, 100%, 8%);
+  background-color: var(--dark-mode-background);
   box-shadow: inset 0px -3px 5px -5px rgba(255, 255, 255, 0.5);
   z-index: 1000;
 }
