@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1em;
   }
 
   .mobile-tagline {
@@ -32,6 +33,10 @@
     font-size: 350%;
     margin-top: 3em;
     margin-bottom: 1.5em;
+  }
+
+  .landing-button {
+    font-size: 1.2rem;
   }
 
   .tagline {
