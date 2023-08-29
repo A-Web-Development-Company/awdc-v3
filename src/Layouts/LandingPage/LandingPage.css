@@ -15,3 +15,32 @@
   display: flex;
   font-size: 1.5rem;
 }
+
+.mobile-tagline {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .landing-cta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-tagline {
+    display: flex;
+    font-size: 350%;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+  }
+
+  .tagline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobile-tagline {
+    font-size: 300%;
+  }
+}

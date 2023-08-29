@@ -95,7 +95,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: #242222;
+    background: var(--dark-mode-background);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -139,7 +139,5 @@
     display: block;
     padding-bottom: 4em;
     margin-bottom: 4em;
-    /* margin: 0em 1em 1em 1em; */
-    /* padding: 1em 2em 4em 2em; */
   }
 }

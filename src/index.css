@@ -83,6 +83,9 @@ button:focus-visible {
   .nav-link {
     color: var(--secondary-text-color);
   }
+  .nav-menu.active {
+    background-color: #fff;
+  }
   .footer-container {
     background-color: #fff;
     box-shadow: inset 0px 3px 5px -5px rgba(21, 55, 44, 0.1);

@@ -11,6 +11,10 @@ const LandingPage = () => {
         <br />
         potential.
       </h2>
+
+      <h2 className="mobile-tagline">
+        Discover your digital edge. Accelerate your business potential
+      </h2>
       <PrimaryButton className="landing-button">
         Schedule a free consultation
       </PrimaryButton>
