@@ -4,7 +4,7 @@ const PrimaryButton = styled.button`
   background-color: #00bcc9;
   color: #fff;
   border: none;
-  border-radious: 4px;
+  border-radius: 10px;
   padding: 1em 2em;
   height: 50%;
   cursor: pointer;
