@@ -64,6 +64,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.MuiFormLabel-root {
+  color: var(--dark-mode-text-color) !important;
+}
+
+input,
+textarea {
+  color: var(--dark-mode-text-color) !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: var(--dark-mode-text-color) !important;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--main-text-color);
@@ -92,5 +105,15 @@ button:focus-visible {
   .footer-container {
     background-color: #fff;
     box-shadow: inset 0px 3px 5px -5px rgba(21, 55, 44, 0.1);
+  }
+  .MuiFormLabel-root {
+    color: var(--main-text-color) !important;
+  }
+  input,
+  textarea {
+    color: var(--main-text-color) !important;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-color: var(--main-text-color) !important;
   }
 }

@@ -4,6 +4,13 @@ import Footer from "./Components/Footer/Footer";
 import LandingPage from "./Layouts/LandingPage/LandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactForm from "./Components/Forms/Contact/ContactForm";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ["fieldwork", "san-serif"].join(","),
+  },
+});
 
 function App() {
   return (
@@ -13,7 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
         </Routes>
-        <ContactForm />
+        <ThemeProvider theme={theme}>
+          <ContactForm />
+        </ThemeProvider>
         <Footer />
       </Router>
     </>

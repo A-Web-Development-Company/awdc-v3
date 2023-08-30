@@ -13,7 +13,7 @@ const ContactForm = () => {
       >
         <input type="hidden" name="form-name" value="contact" />
         <TextField
-          variant="standard"
+          variant="outlined"
           label="Name"
           name="name"
           required
@@ -22,7 +22,7 @@ const ContactForm = () => {
           margin="normal"
         />
         <TextField
-          variant="standard"
+          variant="outlined"
           label="Email Address"
           name="email"
           required
@@ -31,7 +31,7 @@ const ContactForm = () => {
           margin="normal"
         />
         <TextField
-          variant="standard"
+          variant="outlined"
           label="Company/Organization Name"
           name="company"
           fullWidth
@@ -39,7 +39,7 @@ const ContactForm = () => {
           margin="normal"
         />
         <TextField
-          variant="standard"
+          variant="outlined"
           label="Additional Comments/Notes"
           name="message"
           fullWidth
