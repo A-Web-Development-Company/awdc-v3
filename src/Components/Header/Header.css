@@ -138,7 +138,10 @@
 
   .mobile-contact-button {
     display: block;
-    padding-bottom: 4em;
-    margin-bottom: 4em;
+    margin: 0 0 0 0 !important;
+    padding-top: -1em !important;
+    padding-bottom: 1em !important;
+    margin-top: -1em !important;
+    /* padding-bottom: 2rem !important; */
   }
 }

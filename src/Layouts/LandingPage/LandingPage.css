@@ -9,12 +9,13 @@
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
+  font-weight: 400;
 }
 
 .tagline {
   display: flex;
   text-align: left;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 500;
   line-height: 1.25;
   align-items: center;

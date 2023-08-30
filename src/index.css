@@ -1,7 +1,10 @@
+@import url("https://use.typekit.net/nab2rzo.css");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "fieldwork", sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 200;
   --main-color: #00bcc9;
   --main-text-color: #39405f;
   --secondary-text-color: #267ba1;

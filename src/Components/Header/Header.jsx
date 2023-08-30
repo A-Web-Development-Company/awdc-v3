@@ -63,13 +63,6 @@ const Header = () => {
               >
                 Contact
               </PrimaryButton>
-              {/* <Link
-                to="/"
-                className="mobile-contact-button"
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link> */}
             </li>
           </ul>
         </div>

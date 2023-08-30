@@ -11,9 +11,6 @@ const LandingPage = () => {
         experts who are passionate about helping businesses succeed.
       </p>
 
-      <h2 className="mobile-tagline">
-        Discover your digital edge. Accelerate your business potential
-      </h2>
       <PrimaryButton className="landing-button">
         Schedule a free consultation
       </PrimaryButton>
