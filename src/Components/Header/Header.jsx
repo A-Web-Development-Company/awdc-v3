@@ -67,7 +67,9 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <PrimaryButton className="contact-cta-button">Contact</PrimaryButton>
+      <div className="contact-nav-button">
+        <PrimaryButton className="contact-cta-button">Contact</PrimaryButton>
+      </div>
     </nav>
   );
 };

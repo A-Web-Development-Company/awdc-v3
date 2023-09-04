@@ -65,7 +65,7 @@
 }
 
 .contact-cta-button {
-  margin: 1em 1em 1em 0em;
+  margin: 1.5rem 2rem 1.9rem -2.5rem;
 }
 
 .mobile-contact-button {
@@ -138,11 +138,5 @@
 
   .mobile-contact-button {
     display: block;
-    margin-bottom: 4rem;
-    margin-top: 1rem;
-    padding-top: 0.5rem !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    padding-bottom: 0.5rem !important;
   }
 }
