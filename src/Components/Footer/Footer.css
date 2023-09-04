@@ -64,6 +64,18 @@
   margin-bottom: 1.5rem;
 }
 
+.footer-cta-contact-info {
+  display: block;
+  letter-spacing: 0;
+  line-height: 1.4;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.footer-links {
+  width: 50%;
+}
+
 .copyright {
   margin: 0 auto;
   padding-bottom: 2em;

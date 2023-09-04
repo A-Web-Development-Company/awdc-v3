@@ -18,8 +18,14 @@ const Footer = () => {
           <PrimaryButton className="footer-cta-button">
             Contact Us
           </PrimaryButton>
-          <a className="contact-email" href="mailto:hello@awdc.io">
+          <a
+            className="footer-cta-contact-info"
+            href="mailto:hello@awdc.io?subject=Hello AWDC!"
+          >
             hello@awdc.io
+          </a>
+          <a className="footer-cta-contact-info" href="tel:4757770754">
+            475.777.0754
           </a>
         </div>
       </section>
