@@ -44,11 +44,6 @@
   margin-bottom: 0;
 }
 
-/* .footer-tag {
-  text-align: center;
-  margin-top: 1em;
-} */
-
 .footer-tag-light {
   font-size: 2rem;
   letter-spacing: 0;
@@ -79,4 +74,14 @@
 .copyright {
   margin: 0 auto;
   padding-bottom: 2em;
+}
+@media screen and (max-width: 880px) {
+  .footer-tagline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+  }
 }
