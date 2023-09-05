@@ -47,12 +47,17 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/" onClick={closeMobileMenu}>
-                About
+                Work
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/" onClick={closeMobileMenu}>
-                Work
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/" onClick={closeMobileMenu}>
+                About
               </Link>
             </li>
             <li className="nav-item">

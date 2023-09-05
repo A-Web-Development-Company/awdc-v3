@@ -28,6 +28,53 @@ const Footer = () => {
             475.777.0754
           </a>
         </div>
+        <div className="footer-links">
+          <div className="footer-link-col">
+            <ul className="footer-col-items">
+              <h3 className="footer-col-heading">Practice</h3>
+              <li className="footer-col-item">
+                <Link to="/" className="footer-col-link">
+                  Work
+                </Link>
+              </li>
+              <li className="p-item">
+                <Link to="/" className="footer-col-link">
+                  Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-link-col">
+            <ul className="footer-col-items">
+              <h3 className="footer-col-heading">People</h3>
+              <li className="footer-col-item">
+                <Link to="/" className="footer-col-link">
+                  Who We Are
+                </Link>
+              </li>
+              <li className="p-item">
+                <Link to="/" className="footer-col-link">
+                  Our Mission
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-link-col">
+            <ul className="footer-col-items">
+              <h3 className="footer-col-heading">Extra</h3>
+              <li className="footer-col-item">
+                <Link to="/" className="footer-col-link">
+                  Articles
+                </Link>
+              </li>
+              <li className="p-item">
+                <Link to="/" className="footer-col-link">
+                  Media
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <div className="social">
         <a

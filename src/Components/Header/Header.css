@@ -132,6 +132,10 @@
     font-size: 2rem;
   }
 
+  .contact-nav-button {
+    display: none;
+  }
+
   .contact-cta-button {
     display: none;
   }
