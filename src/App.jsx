@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 import LandingPage from "./Layouts/LandingPage/LandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactForm from "./Components/Forms/Contact/ContactForm";
@@ -23,7 +23,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <ContactForm />
         </ThemeProvider>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );
