@@ -1,0 +1,114 @@
+@import url("https://use.typekit.net/nab2rzo.css");
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "fieldwork", sans-serif;
+  line-height: 1.5;
+  font-weight: 200;
+  --main-color: #00bcc9;
+  --main-text-color: #39405f;
+  --secondary-text-color: #267ba1;
+  --dark-mode-background: #121212;
+  --dark-mode-text-color: #f8f0e3;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  color: var(--dark-mode-text-color);
+  background-color: var(--dark-mode-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: var(--main-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--secondary-text-color);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  /* min-width: 320px; */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-family: inherit;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--main-color);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.MuiFormLabel-root {
+  color: var(--dark-mode-text-color) !important;
+}
+
+input,
+textarea {
+  color: var(--dark-mode-text-color) !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: var(--dark-mode-text-color) !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--main-text-color);
+    background-color: #ffffff;
+  }
+  body {
+    background-color: #fff;
+  }
+  a:hover {
+    color: var(--secondary-text-color);
+  }
+  button {
+    background-color: var(--main-color);
+  }
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(21, 55, 44, 0.1);
+    color: var(--main-text-color);
+  }
+  .nav-link {
+    color: var(--secondary-text-color);
+  }
+  .nav-menu.active {
+    background-color: #fff;
+  }
+  .footer-container {
+    background-color: #fff;
+    box-shadow: inset 0px 3px 5px -5px rgba(21, 55, 44, 0.1);
+  }
+  .MuiFormLabel-root {
+    color: var(--main-text-color) !important;
+  }
+  input,
+  textarea {
+    color: var(--main-text-color) !important;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-color: var(--main-text-color) !important;
+  }
+}
