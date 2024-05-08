@@ -1,0 +1,62 @@
+#aboutStructure {
+    display: flex;
+    place-content: stretch space-evenly;
+    margin-top: 150px;
+    margin-bottom: 75px;
+}
+
+#headshotCol1, #headshotCol2 {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center space-around;
+    width:25%;
+    /* height: 1000px; */
+}
+
+#headshotCol1 {
+    
+}
+
+#headshotCol2 {
+
+}
+
+#statementCol {
+    width: 35%;
+}
+
+#statementContainer {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: space-around;
+    height: 70%;
+}
+
+.statement {
+    /* margin: 30px auto; */
+}
+
+.statement p, .statement h2 {
+    text-align: center;
+}
+
+.teamMember {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.teamMember img {
+    width: 80%; 
+    margin: 5px auto;
+}
+.teamMember p {
+    width: 80%; 
+    margin: 2px auto;
+    text-align: center;
+}
+.teamMember h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}

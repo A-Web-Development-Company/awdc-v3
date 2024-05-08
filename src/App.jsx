@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactForm from "./Components/Forms/Contact/ContactForm";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AboutPage from "./Pages/AboutPage";
+import MainLayout from "./Layouts/MainLayout"
 
 const theme = createTheme({
   typography: {
@@ -17,14 +18,16 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
+        {/* <Header />  now present on all pages via MainLayout */}
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/About" element={<AboutPage />} />
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<LandingPage />} />
+            <Route path="/About" element={<AboutPage />} />
+          </Route>
         </Routes>
-        <ThemeProvider theme={theme}>
+        {/* <ThemeProvider theme={theme}>
           <ContactForm />
-        </ThemeProvider>
+        </ThemeProvider>  now only present on landing page, but can be implemented wherever */}
         {/* <Footer /> */}
       </Router>
     </>

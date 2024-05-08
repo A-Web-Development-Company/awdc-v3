@@ -1,5 +1,14 @@
 import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 import "./LandingPage.css";
+import ContactForm from "../../Components/Forms/Contact/ContactForm";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ["fieldwork", "san-serif"].join(","),
+  },
+});
 
 const LandingPage = () => {
   return (
@@ -14,6 +23,9 @@ const LandingPage = () => {
       <PrimaryButton className="landing-button">
         Schedule a free consultation
       </PrimaryButton>
+      <ThemeProvider theme={theme}>
+        <ContactForm />
+      </ThemeProvider>
     </div>
   );
 };
