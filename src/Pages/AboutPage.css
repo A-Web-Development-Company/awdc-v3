@@ -120,19 +120,32 @@
 
     .statementScreen {
         display: block;
-        position:absolute;
-        bottom: -8rem;
+        position:fixed;
+        bottom: -10rem;
         width: 35%;
-        height: 275px;
+        height: 220px;
         background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
         /* background: #333; */
         opacity: 0.85;
     }
 
+    .socials {
+        position: sticky;
+        right: 20%; 
+        bottom: 5%; 
+        opacity: .75;  
+        /* transition: opacity; */
+    }
+
+    /* .socials .unfaded {
+        transition: opacity;
+        opacity: 1;
+    } */
+
     .teamMemberScreen {
         display: block;
         position:absolute;
-        bottom: -8rem;
+        bottom: -20rem;
         width: 25%;
         height: 275px;
         background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
@@ -142,5 +155,9 @@
 
     .teamMember.shortList {
         display: block;
+    }
+
+    .extraMarg {
+        margin-bottom: 150px;
     }
 }

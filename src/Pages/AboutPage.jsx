@@ -7,6 +7,17 @@ import {FaInstagram} from 'react-icons/fa'
 import './AboutPage.css'
 
 
+// const socials = document.querySelector('#socials')
+// const scrollFade = () => {
+//   if(window.screenY > .5){
+//     socials.classList.add('unfaded')
+//   } else {
+//     socials.classList.remove('unfaded')
+//   }
+// }
+
+// document.addEventListener('scroll',scrollFade)
+
 const AboutPage = () => {
   return (
     <div id='aboutStructure'>
@@ -29,7 +40,7 @@ const AboutPage = () => {
           <h3>Name</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
         </div>
-        <div className="teamMember shortList">
+        <div className="teamMember shortList extraMarg">
           <img src={PlaceholderHS} className=''/>
           <h3>Name</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
@@ -57,7 +68,7 @@ const AboutPage = () => {
             <p>1) improve brand awareness and credibility, <br/> 2) increase conversion of website visitors to customers, <br/> 3) increase revenue from conversion rates <br/> 4) the increased proliferation of sustainable career paths in the black and eventually larger BIPOC community</p>
           </div>
           <div className="statementScreen"></div>
-          <div className="socials">
+          <div id='socials' className="socials">
             <a><FaGithub /></a>
             <a><FaTwitter /></a>
             <a><FaInstagram /></a>
