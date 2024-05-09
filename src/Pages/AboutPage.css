@@ -1,3 +1,7 @@
+*::-webkit-scrollbar {
+    display: none;
+}
+
 #aboutStructure {
     display: flex;
     place-content: stretch space-evenly;
@@ -25,15 +29,28 @@
     width: 35%;
 }
 
+.socials {
+    display: flex;
+    bottom: 1%;
+    place-content: center;
+    margin-top: 85px;
+
+}
+
+.socials * {
+    font-size: 1.75rem;
+    margin: auto 8px;
+}
+
 #statementContainer {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     place-content: space-around;
     height: 70%;
 }
 
 .statement {
-    /* margin: 30px auto; */
+    margin: 25px auto;
 }
 
 .statement p, .statement h2 {
@@ -48,7 +65,13 @@
 }
 
 .teamMember img {
+    transition: width .1s ease-in-out;
     width: 80%; 
+    margin: 5px auto;
+}
+.teamMember img:hover {
+    transition: width .2s ease-in-out;
+    width: 90%; 
     margin: 5px auto;
 }
 .teamMember p {
@@ -59,4 +82,65 @@
 .teamMember h3 {
     font-size: 1.5rem;
     text-align: center;
+}
+
+.teamMemberScreen {
+    display: none;
+}
+
+.shortList {
+    display: none;
+}
+
+
+@media all and (max-width: 960px) {
+
+    #headshotCol1 {
+        overflow: scroll;
+        height: 900px;
+        flex-wrap: nowrap
+    }
+
+    #headshotCol2 {
+        display: none;
+    }
+
+    #statementCol {
+        overflow: scroll;
+        height: 875px;
+    }
+
+    #statementContainer:last-child {
+        margin-bottom: 100px;
+    }
+
+    .statement {
+        margin: 40px auto;
+    }
+
+    .statementScreen {
+        display: block;
+        position:absolute;
+        bottom: -8rem;
+        width: 35%;
+        height: 275px;
+        background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+        /* background: #333; */
+        opacity: 0.85;
+    }
+
+    .teamMemberScreen {
+        display: block;
+        position:absolute;
+        bottom: -8rem;
+        width: 25%;
+        height: 275px;
+        background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+        /* background: #333; */
+        opacity: 0.85;
+    }
+
+    .teamMember.shortList {
+        display: block;
+    }
 }

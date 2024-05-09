@@ -1,6 +1,9 @@
 import React from 'react'
 import ErreyonHS from '../assets/images/erreHS.png'
 import PlaceholderHS from '../assets/images/ph.png'
+import {FaGithub} from 'react-icons/fa'
+import {FaTwitter} from 'react-icons/fa'
+import {FaInstagram} from 'react-icons/fa'
 import './AboutPage.css'
 
 
@@ -18,6 +21,21 @@ const AboutPage = () => {
           <h3>Erreyon Elders</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
         </div>
+
+        {/* On mobile, the following headshots scroll on the left column*/}
+
+        <div className="teamMember shortList">
+          <img src={PlaceholderHS} className=''/>
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
+        </div>
+        <div className="teamMember shortList">
+          <img src={PlaceholderHS} className=''/>
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
+        </div>
+
+        <div className="teamMemberScreen"> </div>
       </div>
 
       <div id="statementCol" className=''>
@@ -37,6 +55,12 @@ const AboutPage = () => {
           <div className="statement">
             <h2>Benefits</h2>
             <p>1) improve brand awareness and credibility, <br/> 2) increase conversion of website visitors to customers, <br/> 3) increase revenue from conversion rates <br/> 4) the increased proliferation of sustainable career paths in the black and eventually larger BIPOC community</p>
+          </div>
+          <div className="statementScreen"></div>
+          <div className="socials">
+            <a><FaGithub /></a>
+            <a><FaTwitter /></a>
+            <a><FaInstagram /></a>
           </div>
         </div>
       </div>
