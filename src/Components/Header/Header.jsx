@@ -45,16 +45,16 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to="/" onClick={closeMobileMenu}>
                 Work
               </Link>
-            </li> */}
-            {/* <li className="nav-item">
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/" onClick={closeMobileMenu}>
                 Services
               </Link>
-            </li> */}
+            </li>
             <li className="nav-item">
               <Link className="nav-link" to="/" onClick={closeMobileMenu}>
                 About
