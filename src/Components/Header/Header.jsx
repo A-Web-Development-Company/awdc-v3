@@ -36,7 +36,7 @@ const Header = () => {
       <div className="navbar-container">
         <div className="left">
           <div className="logo">
-            <img src={Logo} alt="awdc-logo" />
+            <Link to='/'><img src={Logo} alt="awdc-logo" /></Link>
           </div>
           <div className="menu-icon" onClick={handleClick}>
             <FontAwesomeIcon icon={click ? faTimes : faBars} />

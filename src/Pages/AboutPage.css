@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *::-webkit-scrollbar {
     display: none;
 }
@@ -98,11 +102,18 @@
     #headshotCol1 {
         overflow: scroll;
         height: 900px;
-        flex-wrap: nowrap
+        flex-wrap: nowrap;
+        /* box-shadow: inset 0 10px 2px -2px rgba(200,200,200,1); */
+        box-shadow: inset -10px 5px 8px 5px #fff,inset -5px -5px 10px -5px rgba(100,100,100,.4);
     }
 
     #headshotCol2 {
         display: none;
+    }
+
+    #statementContainer{
+        position: sticky; 
+        z-index: 10;
     }
 
     #statementCol {
@@ -130,7 +141,7 @@
     }
 
     .socials {
-        position: sticky;
+        position: fixed;
         right: 20%; 
         bottom: 5%; 
         opacity: .75;  
@@ -154,7 +165,7 @@
     }
 
     .teamMember.shortList {
-        display: block;
+        display: flex;
     }
 
     .extraMarg {
