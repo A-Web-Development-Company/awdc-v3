@@ -6,7 +6,7 @@
     display: none;
 }
 
-/* #aboutStructure {
+#aboutStructure {
     display: flex;
     place-content: stretch space-evenly;
     margin-top: 150px;
@@ -93,10 +93,10 @@
 
 .shortList {
     display: none;
-} */
+}
 
 
-/* @media all and (max-width: 960px) {
+@media all and (max-width: 960px) {
 
     #headshotCol1 {
         overflow: scroll;
@@ -161,4 +161,4 @@
     .extraMarg {
         margin-bottom: 150px;
     }
-} */
+}
