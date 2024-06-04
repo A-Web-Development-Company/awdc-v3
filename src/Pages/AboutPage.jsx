@@ -24,11 +24,11 @@ const AboutPage = () => {
   return (
     <div id='aboutStructure'>
       <div id="headshotCol1" className=''>
-        <div className="teamMember">
+        <div className="teamMember flex flex-col">
           <img src={MalikHS} className=''/>
-          <h3>Malik Felix</h3>
+          <h3 className='text-red'>Malik Felix</h3>
           <h4 className='text-center mx-auto'>Founder, CEO and Lead Developer</h4>
-          <p className='text-white'>My passion lies in Front End Development and UI Design, where I use my expertise to build websites and web applications that look great and function well.
+          <p className='text-black'>My passion lies in Front End Development and UI Design, where I use my expertise to build websites and web applications that look great and function well.
 </p>
         </div>
         <div className="teamMember">
