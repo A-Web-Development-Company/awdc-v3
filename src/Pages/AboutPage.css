@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+#aboutStructure {
+    display: flex;
+    place-content: stretch space-evenly;
+    margin-top: 150px;
+    margin-bottom: 75px;
+}
+
+#headshotCol1, #headshotCol2 {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center space-around;
+    width:25%;
+}
+
+#headshotCol1 {
+    
+}
+
+#headshotCol2 {
+
+}
+
+#statementCol {
+    width: 35%;
+}
+
+.socials {
+    display: flex;
+    bottom: 1%;
+    place-content: center;
+    margin-top: 85px;
+
+}
+
+.socials * {
+    font-size: 1.75rem;
+    margin: auto 8px;
+}
+
+#statementContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: space-around;
+    height: 70%;
+}
+
+.statement {
+    margin: 25px auto;
+}
+
+.statement p, .statement h2 {
+    text-align: center;
+}
+
+.teamMember {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.teamMember img {
+    transition: width .1s ease-in-out;
+    width: 80%; 
+    margin: 5px auto;
+}
+.teamMember img:hover {
+    transition: width .2s ease-in-out;
+    width: 90%; 
+    margin: 5px auto;
+}
+.teamMember p {
+    width: 80%; 
+    margin: 2px auto;
+    text-align: center;
+}
+.teamMember h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.teamMemberScreen {
+    display: none;
+}
+
+.shortList {
+    display: none;
+}
+
+
+@media all and (max-width: 960px) {
+
+    #headshotCol1 {
+        overflow: scroll;
+        height: 900px;
+        flex-wrap: nowrap;
+        box-shadow: inset -10px 5px 8px 5px #fff,inset -5px -5px 10px -5px rgba(100,100,100,.4);
+    }
+
+    #headshotCol2 {
+        display: none;
+    }
+
+    #statementContainer{
+        position: sticky; 
+        z-index: 10;
+    }
+
+    #statementCol {
+        overflow: scroll;
+        height: 875px;
+    }
+
+    #statementContainer:last-child {
+        margin-bottom: 100px;
+    }
+
+    .statement {
+        margin: 40px auto;
+    }
+
+    .statementScreen {
+        display: block;
+        position:fixed;
+        bottom: -10rem;
+        width: 35%;
+        height: 220px;
+        background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+        opacity: 0.85;
+    }
+
+    .socials {
+        position: fixed;
+        right: 20%; 
+        bottom: 5%; 
+        opacity: .75;  
+    }
+
+    .teamMemberScreen {
+        display: block;
+        position:absolute;
+        bottom: -20rem;
+        width: 25%;
+        height: 275px;
+        background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+        opacity: 0.85;
+    }
+
+    .teamMember.shortList {
+        display: flex;
+    }
+
+    .extraMarg {
+        margin-bottom: 150px;
+    }
+}

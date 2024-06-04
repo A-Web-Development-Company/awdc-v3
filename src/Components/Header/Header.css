@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --main-color: #00bcc9;
   --main-text-color: #39405f;
@@ -21,6 +25,7 @@
 .navbar {
   display: flex;
   position: fixed;
+  top: 0;
   width: 100%;
   color: var(--dark-mode-text-color);
   background-color: var(--dark-mode-background);

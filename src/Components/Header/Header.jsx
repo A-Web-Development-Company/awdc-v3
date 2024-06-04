@@ -25,6 +25,10 @@ const Header = () => {
     showButton();
   }, []);
 
+  // below might be more efficient with tailwind implementation
+  // sets simple media query-like conditional display once 
+  // instead running func at any/all page adjustment
+  // may not be necessary as most page size changes are automatic
   window.addEventListener("resize", showButton);
 
   return (
@@ -32,7 +36,7 @@ const Header = () => {
       <div className="navbar-container">
         <div className="left">
           <div className="logo">
-            <img src={Logo} alt="awdc-logo" />
+            <Link to='/'><img src={Logo} alt="awdc-logo" /></Link>
           </div>
           <div className="menu-icon" onClick={handleClick}>
             <FontAwesomeIcon icon={click ? faTimes : faBars} />
@@ -56,7 +60,7 @@ const Header = () => {
               </Link>
             </li> */}
             <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeMobileMenu}>
+              <Link className="nav-link" to="/About" onClick={closeMobileMenu}>
                 About
               </Link>
             </li>
