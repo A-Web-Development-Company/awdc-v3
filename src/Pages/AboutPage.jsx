@@ -27,13 +27,14 @@ const AboutPage = () => {
         <div className="teamMember flex flex-col">
           <img src={MalikHS} className=''/>
           <h3 className='text-red'>Malik Felix</h3>
-          <h4 className='text-center mx-auto'>Founder, CEO and Lead Developer</h4>
+          <h4 className='text-center mx-auto'>Co-Founder</h4>
           <p className='text-black'>My passion lies in Front End Development and UI Design, where I use my expertise to build websites and web applications that look great and function well.
 </p>
         </div>
         <div className="teamMember">
           <img src={ErreyonHS} className=''/>
           <h3>Erreyon Elders</h3>
+          <h4 className='text-center mx-auto'>Founding Developer</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
         </div>
 
