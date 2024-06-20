@@ -16,8 +16,9 @@
 #headshotCol1, #headshotCol2 {
     display: flex;
     flex-flow: column wrap;
-    place-content: center space-around;
-    width:25%;
+    place-content: space-evenly;
+    width:20%;
+    /* border-right: .5px solid rgba(15, 15, 15, .1); */
 }
 
 #headshotCol1 {
@@ -29,7 +30,7 @@
 }
 
 #statementCol {
-    width: 35%;
+    width: 70%;
 }
 
 .socials {
@@ -50,6 +51,7 @@
     flex-flow: column nowrap;
     place-content: space-around;
     height: 70%;
+    /* border: .5px solid black; */
 }
 
 .statement {
@@ -63,18 +65,18 @@
 .teamMember {
     display: flex;
     flex-flow: column nowrap;
-    margin: 15px auto;
+    margin: 5px auto;
     width: 100%;
 }
 
 .teamMember img {
     transition: width .1s ease-in-out;
-    width: 80%; 
+    width: 50%; 
     margin: 5px auto;
 }
 .teamMember img:hover {
     transition: width .2s ease-in-out;
-    width: 90%; 
+    width: 60%; 
     margin: 5px auto;
 }
 .teamMember p {
@@ -83,8 +85,12 @@
     text-align: center;
 }
 .teamMember h3 {
-    font-size: 1.5rem;
+    font-size: .9rem;
     text-align: center;
+}
+
+.teamMember h4 {
+    font-size: .7rem;
 }
 
 .teamMemberScreen {
@@ -98,12 +104,12 @@
 
 @media all and (max-width: 960px) {
 
-    #headshotCol1 {
+    /* #headshotCol1 {
         overflow: scroll;
         height: 900px;
         flex-wrap: nowrap;
         box-shadow: inset -10px 5px 8px 5px #fff,inset -5px -5px 10px -5px rgba(100,100,100,.4);
-    }
+    } */
 
     #headshotCol2 {
         display: none;

@@ -9,33 +9,23 @@ import {FaInstagram} from 'react-icons/fa'
 import './AboutPage.css'
 
 
-// const socials = document.querySelector('#socials')
-// const scrollFade = () => {
-//   if(window.screenY > .5){
-//     socials.classList.add('unfaded')
-//   } else {
-//     socials.classList.remove('unfaded')
-//   }
-// }
 
-// document.addEventListener('scroll',scrollFade)
 
 const AboutPage = () => {
   return (
     <div id='aboutStructure'>
-      <div id="headshotCol1" className=''>
+      <div id="headshotCol1" className='fixed left-0 border-r-zinc-200'>
         <div className="teamMember flex flex-col">
           <img src={MalikHS} className=''/>
           <h3 className='text-red'>Malik Felix</h3>
           <h4 className='text-center mx-auto'>Co-Founder</h4>
-          <p className='text-black'>My passion lies in Front End Development and UI Design, where I use my expertise to build websites and web applications that look great and function well.
-</p>
+          <p className='text-black hidden sm:visible'>My passion lies in Front End Development and UI Design, where I use my expertise to build websites and web applications that look great and function well.</p>
         </div>
         <div className="teamMember">
           <img src={ErreyonHS} className=''/>
           <h3>Erreyon Elders</h3>
           <h4 className='text-center mx-auto'>Founding Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
+          <p className='hidden sm:visible'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
         </div>
 
         {/* On mobile, the following headshots scroll on the left column*/}
@@ -43,19 +33,17 @@ const AboutPage = () => {
         <div className="teamMember shortList">
           <img src={EssoHS} className=''/>
           <h3>Esso Bodjana</h3>
-          <p>I was born and raised in NYC and recently moved to San Diego to take advantage of the sunny weather. I bring 10+ years of experience working in the finance, tech, and start up space. Very interested in helping people find their potential.</p>
+          <p className='hidden sm:visible'>I was born and raised in NYC and recently moved to San Diego to take advantage of the sunny weather. I bring 10+ years of experience working in the finance, tech, and start up space. Very interested in helping people find their potential.</p>
         </div>
-        <div className="teamMember shortList">
+        <div className="sm:teamMember shortList hidden">
           <img src={PlaceholderHS} className=''/>
           <h3>Name</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
         </div>
-
-        {/* <div className="teamMemberScreen"> </div> */}
       </div>
 
       <div id="statementCol" className='overflow-hidden'>
-        <div id='statementContainer' className='overflow-hidden'>
+        <div id='statementContainer' className='overflow-scroll ml-[40px]'>
           <div className="statement">
             <h2>Mission</h2>
             <p>Design and develop websites for non-profit organizations to: <br/> 1) serve as a technical partner and streamline their mission <br/> 2) efficiently use web technologies to have an advantage in the digital age <br/> 3) leverage technology to support black professionals in the tech community</p>
@@ -72,7 +60,7 @@ const AboutPage = () => {
             <h2>Benefits</h2>
             <p>1) improve brand awareness and credibility, <br/> 2) increase conversion of website visitors to customers, <br/> 3) increase revenue from conversion rates <br/> 4) the increased proliferation of sustainable career paths in the black and eventually larger BIPOC community</p>
           </div>
-          {/* <div className="statementScreen"></div> */}
+
           <div id='socials' className="socials ">
             <a><FaGithub /></a>
             <a><FaTwitter /></a>
