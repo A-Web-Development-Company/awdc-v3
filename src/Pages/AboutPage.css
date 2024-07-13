@@ -9,16 +9,13 @@
 #aboutStructure {
     display: flex;
     place-content: stretch space-evenly;
-    margin-top: 150px;
-    margin-bottom: 75px;
+    margin-top: 120px;
 }
 
 #headshotCol1, #headshotCol2 {
     display: flex;
     flex-flow: column wrap;
     place-content: space-evenly;
-    width:20%;
-    /* border-right: .5px solid rgba(15, 15, 15, .1); */
 }
 
 #headshotCol1 {
@@ -30,43 +27,56 @@
 }
 
 #statementCol {
-    width: 70%;
+    width: 85%;
 }
 
 .socials {
     display: flex;
-    bottom: 1%;
-    place-content: center;
-    margin-top: 85px;
+    flex-flow: column nowrap;
+    position: fixed;
+    left: 0;
+    bottom: 10%;
+    place-content: center space-around;
+}
 
+.socials a {
+    width: 50px;
 }
 
 .socials * {
     font-size: 1.75rem;
-    margin: auto 8px;
+    margin: 3px 10px;
 }
 
 #statementContainer {
     display: flex;
     flex-flow: column nowrap;
     place-content: space-around;
-    height: 70%;
-    /* border: .5px solid black; */
+    height: 100%;
 }
 
 .statement {
-    margin: 25px auto;
+    margin: 5px auto;
+    border-bottom: .5px solid rgba(228, 228, 231, .8);
+    min-height: 140px;
 }
 
-.statement p, .statement h2 {
-    text-align: center;
+.statement h2 {
+    text-align: left;
+    font-size: 2rem;
+    border-bottom: .5px solid rgba(228, 228, 231, .8);
+    margin: 0;
+    max-height:45px;
+    line-height: 2rem;
+}
+
+.statement p {
+    text-align: left;
 }
 
 .teamMember {
     display: flex;
     flex-flow: column nowrap;
-    margin: 5px auto;
-    width: 100%;
 }
 
 .teamMember img {
@@ -85,7 +95,7 @@
     text-align: center;
 }
 .teamMember h3 {
-    font-size: .9rem;
+    font-size: .7rem;
     text-align: center;
 }
 
@@ -93,9 +103,6 @@
     font-size: .7rem;
 }
 
-.teamMemberScreen {
-    display: none;
-}
 
 .shortList {
     display: none;
@@ -103,13 +110,6 @@
 
 
 @media all and (max-width: 960px) {
-
-    /* #headshotCol1 {
-        overflow: scroll;
-        height: 900px;
-        flex-wrap: nowrap;
-        box-shadow: inset -10px 5px 8px 5px #fff,inset -5px -5px 10px -5px rgba(100,100,100,.4);
-    } */
 
     #headshotCol2 {
         display: none;
@@ -121,50 +121,22 @@
     }
 
     #statementCol {
-        overflow: scroll;
-        height: 875px;
+    
     }
 
-    #statementContainer:last-child {
-        margin-bottom: 100px;
+    .statement:last-child {
+        margin-bottom: 450px;
     }
 
     .statement {
-        margin: 40px auto;
+        margin: 15px auto;
     }
 
-    .statementScreen {
-        display: block;
-        position:fixed;
-        bottom: -10rem;
-        width: 35%;
-        height: 220px;
-        background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
-        opacity: 0.85;
-    }
 
-    .socials {
-        position: fixed;
-        right: 20%; 
-        bottom: 5%; 
-        opacity: .75;  
-    }
-
-    .teamMemberScreen {
-        display: block;
-        position:absolute;
-        bottom: -20rem;
-        width: 25%;
-        height: 275px;
-        background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
-        opacity: 0.85;
-    }
 
     .teamMember.shortList {
         display: flex;
     }
 
-    .extraMarg {
-        margin-bottom: 150px;
-    }
+
 }
