@@ -9,7 +9,7 @@
 #aboutStructure {
     display: flex;
     place-content: stretch space-evenly;
-    margin-top: 120px;
+    margin-top: 130px;
 }
 
 #headshotCol1, #headshotCol2 {
@@ -56,9 +56,9 @@
 }
 
 .statement {
-    margin: 5px auto;
     border-bottom: .5px solid rgba(228, 228, 231, .8);
     min-height: 140px;
+    margin: 15px 0;
 }
 
 .statement h2 {
@@ -72,6 +72,7 @@
 
 .statement p {
     text-align: left;
+    padding-right: 20px;
 }
 
 .teamMember {
@@ -111,32 +112,12 @@
 
 @media all and (max-width: 960px) {
 
-    #headshotCol2 {
-        display: none;
-    }
 
-    #statementContainer{
-        position: sticky; 
-        z-index: 10;
-    }
 
     #statementCol {
     
     }
 
-    .statement:last-child {
-        margin-bottom: 450px;
-    }
-
-    .statement {
-        margin: 15px auto;
-    }
-
-
-
-    .teamMember.shortList {
-        display: flex;
-    }
 
 
 }
