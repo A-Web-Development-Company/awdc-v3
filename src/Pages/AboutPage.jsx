@@ -9,90 +9,62 @@ import {FaInstagram} from 'react-icons/fa'
 import './AboutPage.css'
 
 
-// const socials = document.querySelector('#socials')
-// const scrollFade = () => {
-//   if(window.screenY > .5){
-//     socials.classList.add('unfaded')
-//   } else {
-//     socials.classList.remove('unfaded')
-//   }
-// }
 
-// document.addEventListener('scroll',scrollFade)
 
 const AboutPage = () => {
   return (
-    <div id='aboutStructure'>
-      <div id="headshotCol1" className=''>
-        <div className="teamMember flex flex-col">
-          <img src={MalikHS} className=''/>
-          <h3 className='text-red'>Malik Felix</h3>
-          <h4 className='text-center mx-auto'>Founder, CEO and Lead Developer</h4>
-          <p className='text-black'>My passion lies in Front End Development and UI Design, where I use my expertise to build websites and web applications that look great and function well.
-</p>
-        </div>
-        <div className="teamMember">
-          <img src={ErreyonHS} className=''/>
-          <h3>Erreyon Elders</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
-        </div>
+    <>
 
-        {/* On mobile, the following headshots scroll on the left column*/}
+      <div id='aboutStructure' className=''>
+        <div id="headshotCol1" className='fixed left-0 border-r-zinc-200 w-18 shadow-lg'>
+          <div className="teamMember sm:w-24 lg:w-32 flex flex-col w-20 shadow-sm">
+            <a href=''><img src={MalikHS} className=''/></a>
+            <h3 className='text-red'>Malik Felix</h3>
+            <h4 className='text-center mx-auto hidden'>Co-Founder</h4>
+            <p className='text-black hidden sm:visible'>My passion lies in Front End Development and UI Design, where I use my expertise to build websites and web applications that look great and function well.</p>
+          </div>
+          <div className="teamMember sm:w-24 lg:w-32 w-20 shadow-sm">
+            <a href=''><img src={ErreyonHS} className=''/></a>
+            <h3>Erreyon Elders</h3>
+            <h4 className='text-center mx-auto hidden'>Founding Developer</h4>
+            <p className='hidden sm:visible'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
+          </div>
 
-        <div className="teamMember shortList">
-          <img src={EssoHS} className=''/>
-          <h3>Esso Bodjana</h3>
-          <p>I was born and raised in NYC and recently moved to San Diego to take advantage of the sunny weather. I bring 10+ years of experience working in the finance, tech, and start up space. Very interested in helping people find their potential.</p>
-        </div>
-        <div className="teamMember shortList">
-          <img src={PlaceholderHS} className=''/>
-          <h3>Name</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
+          <div className="teamMember sm:w-24 lg:w-32 w-20 shadow-sm">
+            <a href=''><img src={EssoHS} className=''/></a>
+            <h3>Esso Bodjana</h3>
+            <p className='hidden sm:visible'>I was born and raised in NYC and recently moved to San Diego to take advantage of the sunny weather. I bring 10+ years of experience working in the finance, tech, and start up space. Very interested in helping people find their potential.</p>
+          </div>
         </div>
 
-        {/* <div className="teamMemberScreen"> </div> */}
-      </div>
+        <div id="statementCol" className='overflow-hidden ml-24 lg:ml-28'>
+          <div id='statementContainer' className='overflow-scroll'>
+            <div className="statement">
+              <h2>Mission</h2>
+              <p>Design and develop websites for non-profit organizations to: <br/> - Serve as a technical partner and streamline their mission <br/> - Efficiently use web technologies to have an advantage in the digital age <br/> - Leverage technology to support black professionals in the tech community</p>
+            </div>
+            <div className="statement">
+              <h2>Vision</h2>
+              <p>Initializing the premiere network of tech and development resources that enable black professionals in the tech industry to reach their ultimate success.</p>
+            </div>
+            <div className="statement">
+              <h2>Target Audience</h2>
+              <p>Tech-focused non-profit organizations and those that offer professional development</p>
+            </div>
+            <div className="statement">
+              <h2>Benefits</h2>
+              <p>- Improve brand awareness and credibility, <br/> - Increase conversion of website visitors to customers, <br/> - Increase revenue from conversion rates <br/> - The increased proliferation of sustainable career paths in the black and eventually larger BIPOC community</p>
+            </div>
 
-      <div id="statementCol" className='overflow-hidden'>
-        <div id='statementContainer' className='overflow-hidden'>
-          <div className="statement">
-            <h2>Mission</h2>
-            <p>Design and develop websites for non-profit organizations to: <br/> 1) serve as a technical partner and streamline their mission <br/> 2) efficiently use web technologies to have an advantage in the digital age <br/> 3) leverage technology to support black professionals in the tech community</p>
-          </div>
-          <div className="statement">
-            <h2>Vision</h2>
-            <p>Initializing the premiere network of tech and development resources that enable black professionals in the tech industry to reach their ultimate success.</p>
-          </div>
-          <div className="statement">
-            <h2>Target Audience</h2>
-            <p>Tech-focused non-profit organizations and those that offer professional development</p>
-          </div>
-          <div className="statement">
-            <h2>Benefits</h2>
-            <p>1) improve brand awareness and credibility, <br/> 2) increase conversion of website visitors to customers, <br/> 3) increase revenue from conversion rates <br/> 4) the increased proliferation of sustainable career paths in the black and eventually larger BIPOC community</p>
-          </div>
-          {/* <div className="statementScreen"></div> */}
-          <div id='socials' className="socials ">
-            <a><FaGithub /></a>
-            <a><FaTwitter /></a>
-            <a><FaInstagram /></a>
+            <div id='socials' className="socials bg-transparent">
+              <a href='' className='shadow-sm'><FaGithub /></a>
+              <a href='' className='shadow-sm'><FaTwitter /></a>
+              <a href='' className='shadow-sm'><FaInstagram /></a>
+            </div>
           </div>
         </div>
       </div>
-
-      <div id="headshotCol2" className="">
-        <div className="teamMember">
-          <img src={EssoHS} className=''/>
-          <h3>Esso Bodjana</h3>
-          <p>I was born and raised in NYC and recently moved to San Diego to take advantage of the sunny weather. I bring 10+ years of experience working in the finance, tech, and start up space. Very interested in helping people find their potential.</p>
-        </div>
-        <div className="teamMember">
-          <img src={PlaceholderHS} className=''/>
-          <h3>Name</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consectetur.</p>
-        </div>
-      </div>
-    </div>
+    </>
   )
 }
 
