@@ -1,13 +1,14 @@
-import { useState, useEffect, useRef } from "react";
-import PrimaryButton from "../Buttons/PrimaryButton";
-import Logo from "../../assets/images/awdc-logo-lower-spaced-no-background.png";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import "./Header.css";
+import { useState, useEffect, useRef } from 'react';
+import PrimaryButton from '../Buttons/PrimaryButton';
+import Logo from '../../assets/images/awdc-logo-lower-spaced-no-background.png';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import './Header.css';
 
 const Header = () => {
   const [click, setClick] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [button, setButton] = useState(true);
   const navMenuRef = useRef(null);
 
@@ -30,11 +31,11 @@ const Header = () => {
 
   useEffect(() => {
     showButton();
-    window.addEventListener("resize", showButton);
-    window.addEventListener("click", handleOutsideClick);
+    window.addEventListener('resize', showButton);
+    window.addEventListener('click', handleOutsideClick);
     return () => {
-      window.removeEventListener("resize", showButton);
-      window.removeEventListener("click", handleOutsideClick);
+      window.removeEventListener('resize', showButton);
+      window.removeEventListener('click', handleOutsideClick);
     };
   }, []);
 
@@ -42,7 +43,7 @@ const Header = () => {
   // sets simple media query-like conditional display once
   // instead running func at any/all page adjustment
   // may not be necessary as most page size changes are automatic
-  window.addEventListener("resize", showButton);
+  window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -59,19 +60,10 @@ const Header = () => {
             </div>
           </div>
           <div className="right">
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className="nav-item">
                 <Link className="nav-link" to="/" onClick={closeMobileMenu}>
                   Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/About"
-                  onClick={closeMobileMenu}
-                >
-                  About
                 </Link>
               </li>
               <li className="nav-item">
@@ -91,7 +83,7 @@ const Header = () => {
         </div>
       </nav>
       <div
-        className={`overlay ${click ? "active" : ""}`}
+        className={`overlay ${click ? 'active' : ''}`}
         onClick={closeMobileMenu}
       ></div>
     </>
