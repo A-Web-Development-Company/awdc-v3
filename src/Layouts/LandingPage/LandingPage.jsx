@@ -1,12 +1,12 @@
-import PrimaryButton from "../../Components/Buttons/PrimaryButton";
-import "./LandingPage.css";
-import ContactForm from "../../Components/Forms/Contact/ContactForm";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-
+import PrimaryButton from '../../Components/Buttons/PrimaryButton';
+import './LandingPage.css';
+import ContactForm from '../../Components/Forms/Contact/ContactForm';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Rafiki from '../../assets/images/UI-UX design-rafiki.svg';
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["fieldwork", "san-serif"].join(","),
+    fontFamily: ['fieldwork', 'san-serif'].join(','),
   },
 });
 
@@ -19,6 +19,13 @@ const LandingPage = () => {
         designers, all working to elevate your digital presence with a team of
         experts who are passionate about helping businesses succeed.
       </p>
+
+      <img
+        src={Rafiki}
+        alt="UI/UX Design Illustration"
+        className="rafiki-image"
+      />
+      <a href="https://storyset.com/web">Web illustrations by Storyset</a>
 
       <PrimaryButton className="landing-button">
         Schedule a free consultation
