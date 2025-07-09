@@ -37,6 +37,7 @@ const Header = () => {
       window.removeEventListener('resize', showButton);
       window.removeEventListener('click', handleOutsideClick);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // below might be more efficient with tailwind implementation

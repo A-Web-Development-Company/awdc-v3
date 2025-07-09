@@ -1,12 +1,8 @@
-@import url("https://use.typekit.net/nab2rzo.css");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://use.typekit.net/nab2rzo.css');
 
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: "fieldwork", sans-serif;
+  font-family: 'fieldwork', sans-serif;
   line-height: 1.5;
   font-weight: 200;
   --main-color: #00bcc9;
